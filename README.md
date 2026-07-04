@@ -83,6 +83,8 @@ tmf-filing-skill/
 └── LICENSE
 ``` 
 ## Processing Workflow
+````markdown
+```text
 Input PDF
    ↓
 Read TMF naming rules
@@ -104,6 +106,7 @@ Generate structured folders
 Create TMF output zip package
    ↓
 Generate processing report
+```
 ## Key Features
 ### Content-Based Splitting
 The skill splits PDFs based on document content, not by fixed page count.
@@ -226,21 +229,27 @@ TMF_Output.zip
 └── Logs/
     └── Processing_Log.txt
 ```
-### Exception Handling
+## Exception Handling
+
 The skill should flag:
 
-1. Unclassified content
-2. Missing required components
-3. Unclear document boundaries
-4. Missing naming fields
-5. Duplicate file names
-6. Incomplete split-and-merge document groups
-7. Potential mismatch between related documents
+- Unclassified content
+- Missing required components
+- Unclear document boundaries
+- Missing naming fields
+- Duplicate file names
+- Incomplete split-and-merge document groups
+- Potential mismatch between related documents
+
 ## Configuration
+
 Users can adapt this skill by editing the rule files:
-1. rules/TMF_Naming_Rules_Template.xlsx
-2. rules/PDF_Special_Processing_Rules_Template.xlsx
-3. No company-specific information should be stored in this public repository.
+
+```text
+rules/TMF_Naming_Rules_Template.xlsx
+rules/PDF_Special_Processing_Rules_Template.xlsx
+```
+No company-specific information should be stored in this public repository.
 ## Intended Users
 This template may be useful for:
 
