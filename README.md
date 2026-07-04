@@ -66,7 +66,6 @@ Used to define complex processing logic, including:
 ---
 
 ## Recommended Repository Structure
-
 ```text
 tmf-filing-skill/
 ├── README.md
@@ -81,9 +80,9 @@ tmf-filing-skill/
 ├── docs/
 │   └── rule_design_guide.md
 └── LICENSE
-``` 
+```
+
 ## Processing Workflow
-````markdown
 ```text
 Input PDF
    ↓
@@ -107,6 +106,7 @@ Create TMF output zip package
    ↓
 Generate processing report
 ```
+
 ## Key Features
 ### Content-Based Splitting
 The skill splits PDFs based on document content, not by fixed page count.
